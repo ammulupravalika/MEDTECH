@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Halant&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Kaisei+Decol&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Cormorant&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="v300_44">
+        <div class="v300_46"></div>
+        <div class="v300_49"></div>
+        <div class="v300_50"></div>
+        <div class="v300_51"></div><span class="v300_52">SIGNUP</span>
+        <div class="name"></div><a href="/login"><span class="v300_54">LOGIN</span></a>
+        <div class="v300_55"></div><span class="v300_56">MEDTECH</span><span class="v300_57">about</span><span
+            class="v300_58">prescription</span><span class="v300_59">disease prediction</span><span
+            class="v300_60">medicine detection</span><span class="v300_61">get your medicine</span><a href="/"><span
+            class="v300_62">HOME</span></a>
+        <div class="v300_63"></div><span class="v300_64"> </span>
+        <div class="v300_65">
+            <div class="v300_66"></div><span class="v300_67">ABOUT</span><span class="v300_68">Accurate disease
+                prediction needs expert knowledge as it is not understandable by common people.As there are infinite
+                number of diseases ,they have different
+                symptoms and combination of different symptoms lead to different diseases.
+                So,it becomes a very complex issue to decide on a disease.
+                Overall , this project solves the problem for people unaware of medical condition and also helps people
+                of various economic classes to get a first opinion.It aims to assess whether it is possible to predict
+                disease using machine learning.
+            </span>
+        </div><span class="v300_70">MEDICINE DETECTION</span>
+        <div class="v300_95"><h1>{{med1}}</h1><h2></h2></div>
+        <div class="v300_92"><h1>{{med2}}</h1><h2></h2></div>
+        <div class="v300_94"><h1>{{med3}}</h1><h2>{{p3}}</h2></div><span class="v300_96">know more about medicine</span><span class="v300_98">know more
+            about medicine</span><span class="v300_99">know more about medicine</span>
+    </div>
+</body>
+
+</html> <br /><br />
+<style>
+    * {
+        box-sizing: border-box;
+    }
+
+    body {
+        font-size: 14px;
+    }
+
+    .v300_44 {
+        width: 100%;
+        height: 1743px;
+        background: rgba(12, 27, 49, 1);
+        opacity: 1;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        overflow: hidden;
+    }
+
+    .v300_46 {
+        width: 100%;
+        height: 100%;
+        background: url("../images/v300_46.png");
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+        opacity: 0.699999988079071;
+        position: absolute;
+        top: 281px;
+        left: 0px;
+        border: 1px solid rgba(0, 0, 0, 1);
+        box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.25);
+        overflow: hidden;
+    }
+
+    .v300_49 {
+        width: 100%;
+        height: 245px;
+        background: rgba(217, 217, 217, 0.7400000095367432);
+        opacity: 1;
+        position: absolute;
+        top: 34px;
+        left: 0px;
+    }
+
+    .v300_50 {
+        width: 159px;
+        height: 47px;
+        background: rgba(46, 79, 163, 1);
+        opacity: 1;
+        position: absolute;
+        top: 207px;
+        left: 1418px;
+        overflow: hidden;
+    }
+
+    .v300_51 {
+        width: 135px;
+        height: 47px;
+        background: rgba(217, 217, 217, 1);
+        opacity: 1;
+        position: absolute;
+        top: 207px;
+        left: 1577px;
+        overflow: hidden;
+    }
+
+    .v300_52 {
+        width: 88px;
+        color: rgba(0, 0, 0, 1);
+        position: absolute;
+        top: 212px;
+        left: 1591px;
+        font-family: Halant;
+        font-weight: Medium;
+        font-size: 26px;
+        opacity: 1;
+        text-align: left;
+    }
+
+    .name {
+        color: #fff;
+    }
+
+    .v300_54 {
+        width: 106px;
+        color: rgba(0, 0, 0, 1);
+        position: absolute;
+        top: 212px;
+        left: 1456px;
+        font-family: Halant;
+        font-weight: Medium;
+        font-size: 26px;
+        opacity: 1;
+        text-align: left;
+    }
+
+    .v300_55 {
+        width: 107px;
+        height: 75px;
+        background: url("https://th.bing.com/th/id/OIP.hKBr7XhaGWz4IJEJnj0SNwHaF7?pid=ImgDet&rs=1");
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+        opacity: 1;
+        position: absolute;
+        top: 82px;
+        left: 717px;
+        border: 4px solid rgba(216, 188, 188, 1);
+        overflow: hidden;
+    }
+
+    .v300_56 {
+        width: 215px;
+        color: rgba(0, 0, 0, 1);
+        position: absolute;
+        top: 91px;
+        left: 856px;
+        text-shadow: 8px 8px 8px rgba(0, 0, 0, 0.25);
+        font-family: Kaisei Decol;
+        font-weight: Medium;
+        font-size: 40px;
+        opacity: 1;
+        text-align: left;
+    }
+
+    .v300_57 {
+        width: 230px;
+        color: rgba(252, 253, 255, 1);
+        position: absolute;
+        top: 231px;
+        left: 145px;
+        font-family: Halant;
+        font-weight: Medium;
+        font-size: 22px;
+        opacity: 1;
+        text-align: left;
+    }
+
+    .v300_58 {
+        width: 139px;
+        color: rgba(252, 253, 255, 1);
+        position: absolute;
+        top: 230px;
+        left: 260px;
+        font-family: Halant;
+        font-weight: Medium;
+        font-size: 22px;
+        opacity: 1;
+        text-align: left;
+    }
+
+    .v300_59 {
+        width: 218px;
+        color: rgba(252, 253, 255, 1);
+        position: absolute;
+        top: 233px;
+        left: 464px;
+        font-family: Halant;
+        font-weight: Medium;
+        font-size: 22px;
+        opacity: 1;
+        text-align: left;
+    }
+
+    .v300_60 {
+        width: 452px;
+        color: rgba(252, 253, 255, 1);
+        position: absolute;
+        top: 233px;
+        left: 698px;
+        font-family: Halant;
+        font-weight: Medium;
+        font-size: 22px;
+        opacity: 1;
+        text-align: left;
+    }
+
+    .v300_61 {
+        width: 242px;
+        color: rgb(190, 194, 202);
+        position: absolute;
+        top: 227px;
+        left: 924px;
+        font-family: Halant;
+        font-weight: Medium;
+        font-size: 22px;
+        opacity: 1;
+        text-align: left;
+    }
+
+    .v300_62 {
+        width: 72px;
+        color: rgba(0, 0, 0, 1);
+        position: absolute;
+        top: 227px;
+        left: 27px;
+        font-family: Halant;
+        font-weight: Medium;
+        font-size: 26px;
+        opacity: 1;
+        text-align: left;
+    }
+
+    .v300_63 {
+        width: 910px;
+        height: 354px;
+        background: rgb(205, 208, 214);
+        opacity: 1;
+        position: absolute;
+        top: 1313px;
+        left: 448px;
+    }
+
+    .v300_64 {
+        color: rgba(0, 0, 0, 1);
+        position: absolute;
+        top: 568px;
+        left: 78px;
+        font-family: Halant;
+        font-weight: Medium;
+        font-size: 24px;
+        opacity: 1;
+        text-align: left;
+    }
+
+    .v300_65 {
+        width: 818px;
+        height: 286px;
+        background: url("pharmacist-with-pack-of-medicine-190940387.jpg");
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+        opacity: 1;
+        position: absolute;
+        top: 1313px;
+        left: 492px;
+        overflow: hidden;
+    }
+
+    .v300_66 {
+        width: 100px;
+        height: 100px;
+        background: url("../images/v300_66.png");
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+        opacity: 1;
+        position: absolute;
+        top: 15px;
+        left: 7px;
+        overflow: hidden;
+    }
+
+    .v300_67 {
+        width: 74px;
+        color: rgba(0, 0, 0, 1);
+        position: absolute;
+        top: 22px;
+        left: 364px;
+        font-family: Halant;
+        font-weight: Medium;
+        font-size: 24px;
+        opacity: 1;
+        text-align: left;
+    }
+
+    .v300_68 {
+        width: 750px;
+        color: rgba(0, 0, 0, 1);
+        position: absolute;
+        top: 63px;
+        left: 57px;
+        font-family: Cormorant;
+        font-weight: Medium;
+        font-size: 24px;
+        opacity: 1;
+        text-align: left;
+    }
+
+    .v300_70 {
+        width: 477px;
+        color: rgba(182, 219, 168, 1);
+        position: absolute;
+        top: 380px;
+        left: 657px;
+        font-family: Halant;
+        font-weight: Medium;
+        font-size: 48px;
+        opacity: 1;
+        text-align: left;
+    }
+
+    .v300_95 {
+        width: 465px;
+        height: 487px;
+        background: rgb(200, 191, 191);
+        opacity: 1;
+        position: absolute;
+        top: 647px;
+        left: 1265px;
+        overflow: hidden;
+    }
+
+    .v300_92 {
+        width: 465px;
+        height: 487px;
+        background: rgba(217, 217, 217, 1);
+        opacity: 1;
+        position: absolute;
+        top: 647px;
+        left: 84px;
+        overflow: hidden;
+    }
+
+    .v300_94 {
+        width: 465px;
+        height: 487px;
+        background: rgba(217, 217, 217, 1);
+        opacity: 1;
+        position: absolute;
+        top: 647px;
+        left: 660px;
+        overflow: hidden;
+    }
+
+    .v300_96 {
+        width: 428px;
+        color: rgba(46, 70, 116, 1);
+        position: absolute;
+        top: 1043px;
+        left: 103px;
+        font-family: Halant;
+        font-weight: Medium;
+        font-size: 36px;
+        opacity: 1;
+        text-align: left;
+    }
+
+    .v300_98 {
+        width: 428px;
+        color: rgba(46, 70, 116, 1);
+        position: absolute;
+        top: 1043px;
+        left: 679px;
+        font-family: Halant;
+        font-weight: Medium;
+        font-size: 36px;
+        opacity: 1;
+        text-align: left;
+    }
+
+    .v300_99 {
+        width: 428px;
+        color: rgba(46, 70, 116, 1);
+        position: absolute;
+        top: 1043px;
+        left: 1284px;
+        font-family: Halant;
+        font-weight: Medium;
+        font-size: 36px;
+        opacity: 1;
+        text-align: left;
+    }
+</style>

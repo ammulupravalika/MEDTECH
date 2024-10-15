@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Halant&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Kaisei+Decol&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Cormorant&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Iceland&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="v87_2">
+        <div class="v187_143"></div>
+        <div class="v187_94"></div>
+        <div class="v187_95"></div>
+        <div class="v187_96"></div><span class="v187_97">SIGNUP</span>
+        <div class="name"></div><a href="/login"><span class="v187_99">LOGIN</span></a>
+        <div class="v87_4"></div><span class="v87_5">MEDTECH</span><span class="v87_6">about</span><span
+            class="v87_7">prescription</span><span class="v87_8">disease prediction</span><span class="v87_9">medicine
+            detection</span><span class="v87_10">get your medicine</span><a href="/"><span class="v87_12">HOME</span></a><span
+            class="v87_15">PRESCRIPTION</span>
+        <div class="v112_4"></div><span class="v90_21">ABOUT</span>
+        <div class="v112_5"></div><span class="v122_82">Whenever we receive a prescription from our doctor,it seems
+            challenging to understand what is written on it.They make use of latin abbreviations and medical terminology
+            that makes it difficult to understand .While ut becomes highly readable to those who have medical
+            background,such documents are not digested by computers,which are important components of patient’s overall
+            care.
+            Thus,extraction of text becomes way easier to analyze relevant data on drug information.This also paves a
+            way to reduce the chance of medical errors.Many find this process much convenient.</span>
+            <form method="POST" , action="{{url_for('prescription')}}">
+                <div class="v173_41"><strong><input name="prescription" type="text" style= "height: 64px;width: 1051px;color: rgb(33, 33, 12);background-color:rgb(203, 213, 226);font-size: xx-large;font-style: italic;"></strong> </div>
+                </form><span class="v173_44">UPLOAD PHOTO/IMAGE</span>
+        <div class="v173_42"></div>
+    </div>
+</body>
+
+</html> <br /><br />
+<style>
+    * {
+        box-sizing: border-box;
+    }
+
+    body {
+        font-size: 14px;
+    }
+
+    .v87_2 {
+        width: 100%;
+        height: 1456px;
+        background: rgba(13, 27, 49, 1);
+        opacity: 1;
+        position: relative;
+        top: 0px;
+        left: 0px;
+        overflow: hidden;
+    }
+
+    .v187_143 {
+        width: 999px;
+        height: 503px;
+        background: url("https://miro.medium.com/max/2560/1*hVxkXe35kRcAht3QpJylyg.gif");
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+        opacity: 0.699999988079071;
+        position: absolute;
+        left: 482px;
+        top: 513px; 
+        border: 1px solid rgba(0, 0, 0, 1);
+        box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.25);
+        overflow: hidden;
+    }
+
+    .v187_94 {
+        width: 100%;
+        height: 246px;
+        background: rgba(217, 217, 217, 0.7400000095367432);
+        opacity: 1;
+        position: absolute;
+        top: 39px;
+        left: 0px;
+    }
+
+    .v187_95 {
+        width: 159px;
+        height: 47px;
+        background: rgba(46, 79, 163, 1);
+        opacity: 1;
+        position: absolute;
+        top: 207px;
+        left: 1418px;
+        overflow: hidden;
+    }
+
+    .v187_96 {
+        width: 135px;
+        height: 47px;
+        background: rgba(217, 217, 217, 1);
+        opacity: 1;
+        position: absolute;
+        top: 207px;
+        left: 1577px;
+        overflow: hidden;
+    }
+
+    .v187_97 {
+        width: 88px;
+        color: rgba(0, 0, 0, 1);
+        position: absolute;
+        top: 212px;
+        left: 1591px;
+        font-family: Halant;
+        font-weight: Medium;
+        font-size: 26px;
+        opacity: 1;
+        text-align: left;
+    }
+
+    .name {
+        color: #fff;
+    }
+
+    .v187_99 {
+        width: 106px;
+        color: rgba(0, 0, 0, 1);
+        position: absolute;
+        top: 212px;
+        left: 1456px;
+        font-family: Halant;
+        font-weight: Medium;
+        font-size: 26px;
+        opacity: 1;
+        text-align: left;
+    }
+
+    .v87_4 {
+        width: 107px;
+        height: 75px;
+        background: url("https://th.bing.com/th/id/OIP.hKBr7XhaGWz4IJEJnj0SNwHaF7?pid=ImgDet&rs=1");
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+        opacity: 1;
+        position: absolute;
+        top: 61px;
+        left: 812px;
+        border: 4px solid rgba(216, 188, 188, 1);
+        overflow: hidden;
+    }
+
+    .v87_5 {
+        width: 215px;
+        color: rgba(0, 0, 0, 1);
+        position: absolute;
+        top: 60px;
+        left: 933px;
+        text-shadow: 8px 8px 8px rgba(0, 0, 0, 0.25);
+        font-family: Kaisei Decol;
+        font-weight: Medium;
+        font-size: 40px;
+        opacity: 1;
+        text-align: left;
+    }
+
+    .v87_6 {
+        width: 83px;
+        color: rgba(252, 253, 255, 1);
+        position: absolute;
+        top: 224px;
+        left: 215px;
+        font-family: Halant;
+        font-weight: Medium;
+        font-size: 22px;
+        opacity: 1;
+        text-align: left;
+    }
+
+    .v87_7 {
+        width: 137px;
+        color: rgba(252, 253, 255, 1);
+        position: absolute;
+        top: 224px;
+        left: 366px;
+        font-family: Halant;
+        font-weight: Medium;
+        font-size: 22px;
+        opacity: 1;
+        text-align: left;
+    }
+
+    .v87_8 {
+        width: 209px;
+        color: rgba(252, 253, 255, 1);
+        position: absolute;
+        top: 224px;
+        left: 571px;
+        font-family: Halant;
+        font-weight: Medium;
+        font-size: 22px;
+        opacity: 1;
+        text-align: left;
+    }
+
+    .v87_9 {
+        width: 217px;
+        color: rgba(252, 253, 255, 1);
+        position: absolute;
+        top: 224px;
+        left: 789px;
+        font-family: Halant;
+        font-weight: Medium;
+        font-size: 22px;
+        opacity: 1;
+        text-align: left;
+    }
+
+    .v87_10 {
+        width: 204px;
+        color: rgba(252, 253, 255, 1);
+        position: absolute;
+        top: 227px;
+        left: 1023px;
+        font-family: Halant;
+        font-weight: Medium;
+        font-size: 22px;
+        opacity: 1;
+        text-align: left;
+    }
+
+    .v87_12 {
+        width: 72px;
+        color: rgba(0, 0, 0, 1);
+        position: absolute;
+        top: 223px;
+        left: 46px;
+        font-family: Halant;
+        font-weight: Medium;
+        font-size: 26px;
+        opacity: 1;
+        text-align: left;
+    }
+
+    .v87_15 {
+        width: 311px;
+        color: rgba(190, 239, 173, 1);
+        position: absolute;
+        top: 309px;
+        left: 837px;
+        font-family: Kaisei Decol;
+        font-weight: Medium;
+        font-size: 40px;
+        opacity: 1;
+        text-align: left;
+    }
+
+    .v112_4 {
+        width: 1000px;
+        height: 284px;
+        background: rgba(217, 217, 217, 1);
+        opacity: 1;
+        position: absolute;
+        top: 1092px;
+        left: 482px;
+        border-top-left-radius: 50px;
+        border-top-right-radius: 50px;
+        border-bottom-left-radius: 50px;
+        border-bottom-right-radius: 50px;
+        overflow: hidden;
+    }
+
+    .v90_21 {
+        width: 90px;
+        color: rgba(0, 0, 0, 1);
+        position: absolute;
+        top: 1111px;
+        left: 919px;
+        font-family: Kaisei Decol;
+        font-weight: Medium;
+        font-size: 24px;
+        opacity: 1;
+        text-align: left;
+    }
+
+    .v112_5 {
+        width: 999px;
+        height: 503px;
+        background: url("../images/v112_5.png");
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+        opacity: 1;
+        position: absolute;
+        top: 513px;
+        left: 482px;
+        overflow: hidden;
+    }
+
+    .v122_82 {
+        width: 915px;
+        color: rgba(0, 0, 0, 1);
+        position: absolute;
+        top: 1155px;
+        left: 526px;
+        font-family: Cormorant;
+        font-weight: Regular;
+        font-size: 24px;
+        opacity: 1;
+        text-align: left;
+    }
+
+    .v173_41 {
+        width: 830px;
+        height: 64px;
+        background: rgb(223, 218, 218);
+        opacity: 1;
+        position: absolute;
+        top: 392px;
+        left: 566px;
+        border-top-left-radius: 30px;
+        border-top-right-radius: 30px;
+        border-bottom-left-radius: 30px;
+        border-bottom-right-radius: 30px;
+        overflow: hidden;
+    }
+
+    .v173_44 {
+        width: 307px;
+        color: rgb(223, 206, 206);
+        position: absolute;
+        top: 469px;
+        left: 1074px;
+        font-family: Iceland;
+        font-weight: Regular;
+        font-size: 32px;
+        opacity: 1;
+        text-align: left;
+    }
+
+    .v173_42 {
+        width: 97px;
+        height: 64px;
+        background: url("../images/v173_42.png");
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+        opacity: 1;
+        position: absolute;
+        top: 392px;
+        left: 1299px;
+        border-top-left-radius: 30px;
+        border-top-right-radius: 30px;
+        border-bottom-left-radius: 30px;
+        border-bottom-right-radius: 30px;
+        overflow: hidden;
+    }
+</style>

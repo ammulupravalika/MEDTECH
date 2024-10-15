@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Halant&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Kaisei+Decol&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Cormorant&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="v6_147">
+        <div class="v187_119"></div>
+        <div class="v187_120"></div>
+        <div class="v187_121"></div><span class="v187_122">SIGNUP</span>
+        <div class="name"></div><a href="/login"><span class="v187_124">LOGIN</span></a>
+        <div class="v6_152"></div><span class="v6_153">MEDTECH</span><span class="v6_155">about</span><span
+            class="v6_156">prescription</span><span class="v6_157">disease prediction</span><span
+            class="v6_158">medicine detection</span><span class="v6_159">get your medicine</span>
+        <div class="v6_162"></div><span class="v6_163">MEDICINE DETECTION</span><a href="/"><span class="v6_180">HOME</span></a>
+        <div class="v6_231"></div><span class="v6_233">ABOUT</span>
+        <div class="v187_147"></div><span class="v195_70">People often concern with relationships between symptoms and
+            diseases when seeeking medical advises.In this,medicine detection is done by recognition of most common
+            symptoms prior to a particular disease. Now-a-days , it is even possible to obtain pre-diagnosis results
+            based on the symptoms provided by the patients which in turn can alleviate the problem of medical
+            shortage.Here,such diagnosis methods are prop0sed.It even helps the medical workers in areas having under
+            developed medical resources implement medical triage and provide consultation services for people who will
+            seek precise treatment in big hospitals . Additionally , a common disease diagnosis becomes a second
+            priority.
+        </span>
+        <div class="v225_87"></div><span class="v298_26">search hor medicine for your disease</span>
+        <form method="POST" , action="{{url_for('medprediction')}}">
+            <div class="v298_27"><strong><input name="medicine" type="text" style= "height: 50px;width: 1051px;color: rgb(33, 33, 12);background-color:rgb(255, 255, 255);font-size: xx-large;font-style: italic;"></strong> </div>
+            </form>
+    </div>
+</body>
+
+</html> <br /><br />
+<style>
+    * {
+        box-sizing: border-box;
+    }
+
+    body {
+        font-size: 14px;
+    }
+
+    .v6_147 {
+        width: 100%;
+        height: 1917px;
+        background: rgba(8, 17, 30, 1);
+        opacity: 1;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        overflow: hidden;
+    }
+
+    .v187_119 {
+        width: 100%;
+        height: 216px;
+        background: rgba(175, 157, 157, 0.74);
+        opacity: 1;
+        position: absolute;
+        top: 76px;
+        left: 0px;
+    }
+
+    .v187_120 {
+        width: 159px;
+        height: 47px;
+        background: rgba(46, 79, 163, 1);
+        opacity: 1;
+        position: absolute;
+        top: 207px;
+        left: 1418px;
+        overflow: hidden;
+    }
+
+    .v187_121 {
+        width: 135px;
+        height: 47px;
+        background: rgb(255, 255, 255);
+        opacity: 1;
+        position: absolute;
+        top: 207px;
+        left: 1577px;
+        overflow: hidden;
+    }
+
+    .v187_122 {
+        width: 88px;
+        color: rgba(0, 0, 0, 1);
+        position: absolute;
+        top: 212px;
+        left: 1591px;
+        font-family: Halant;
+        font-weight: Medium;
+        font-size: 26px;
+        opacity: 1;
+        text-align: left;
+    }
+
+    .name {
+        color: #fff;
+    }
+
+    .v187_124 {
+        width: 106px;
+        color: rgba(0, 0, 0, 1);
+        position: absolute;
+        top: 212px;
+        left: 1456px;
+        font-family: Halant;
+        font-weight: Medium;
+        font-size: 26px;
+        opacity: 1;
+        text-align: left;
+    }
+
+    .v6_152 {
+        width: 144px;
+        height: 58px;
+        background: url("https://th.bing.com/th/id/OIP.hKBr7XhaGWz4IJEJnj0SNwHaF7?pid=ImgDet&rs=1");
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+        opacity: 1;
+        position: absolute;
+        top: 117px;
+        left: 751px;
+        border: 4px solid rgba(189, 67, 67, 1);
+        overflow: hidden;
+    }
+
+    .v6_153 {
+        width: 215px;
+        color: rgba(0, 0, 0, 1);
+        position: absolute;
+        top: 107px;
+        left: 926px;
+        text-shadow: 8px 8px 8px rgba(0, 0, 0, 0.25);
+        font-family: Kaisei Decol;
+        font-weight: Medium;
+        font-size: 40px;
+        opacity: 1;
+        text-align: left;
+    }
+
+    .v6_155 {
+        width: 93px;
+        color: rgba(252, 253, 255, 1);
+        position: absolute;
+        top: 214px;
+        left: 187px;
+        font-family: Halant;
+        font-weight: Medium;
+        font-size: 26px;
+        opacity: 1;
+        text-align: left;
+    }
+
+    .v6_156 {
+        width: 137px;
+        color: rgba(252, 253, 255, 1);
+        position: absolute;
+        top: 213px;
+        left: 309px;
+        font-family: Halant;
+        font-weight: Medium;
+        font-size: 26px;
+        opacity: 1;
+        text-align: left;
+    }
+
+    .v6_157 {
+        width: 204px;
+        color: rgba(252, 253, 255, 1);
+        position: absolute;
+        top: 213px;
+        left: 547px;
+        font-family: Halant;
+        font-weight: Medium;
+        font-size: 26px;
+        opacity: 1;
+        text-align: left;
+    }
+
+    .v6_158 {
+        width: 217px;
+        color: rgba(252, 253, 255, 1);
+        position: absolute;
+        top: 213px;
+        left: 836px;
+        font-family: Halant;
+        font-weight: Medium;
+        font-size: 26px;
+        opacity: 1;
+        text-align: left;
+    }
+
+    .v6_159 {
+        width: 204px;
+        color: rgba(252, 253, 255, 1);
+        position: absolute;
+        top: 208px;
+        left: 1111px;
+        font-family: Halant;
+        font-weight: Medium;
+        font-size: 26px;
+        opacity: 1;
+        text-align: left;
+    }
+
+    .v6_162 {
+        width: 735px;
+        height: 83px;
+        background: rgba(8, 17, 30, 1);
+        opacity: 1;
+        position: absolute;
+        top: 292px;
+        left: 446px;
+        overflow: hidden;
+    }
+
+    .v6_163 {
+        width: 477px;
+        color: rgba(182, 219, 168, 1);
+        position: absolute;
+        top: 322px;
+        left: 795px;
+        font-family: Halant;
+        font-weight: Medium;
+        font-size: 48px;
+        opacity: 1;
+        text-align: left;
+    }
+
+    .v6_180 {
+        width: 72px;
+        color: rgb(195, 177, 177);
+        position: absolute;
+        top: 221px;
+        left: 47px;
+        font-family: Halant;
+        font-weight: Medium;
+        font-size: 26px;
+        opacity: 1;
+        text-align: left;
+    }
+
+    .v6_231 {
+        position: absolute;
+        width: 1158px;
+        height: 293px;  
+        background: rgb(190, 195, 204);
+        opacity: 1;
+        position: absolute;
+        left: 400px;
+        top: 1537px;
+        overflow: hidden;
+    }
+
+    .v6_233 {
+        width: 111px;
+        color: rgba(23, 83, 36, 1);
+        position: absolute;
+        top: 1537px;
+        left: 860px;
+        font-family: Halant;
+        font-weight: Medium;
+        font-size: 36px;
+        opacity: 1;
+        text-align: left;
+    }
+
+    .v187_147 {
+        width: 100%;
+        height: 100%;
+        background: url("../images/v187_147.png");
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+        opacity: 0.699999988079071;
+        position: absolute;
+        top: 292px;
+        left: 0px;
+        border: 1px solid rgba(0, 0, 0, 1);
+        box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.25);
+        overflow: hidden;
+    }
+
+    .v195_70 {
+        width: 1000px;
+        color: rgba(0, 0, 0, 1);
+        position: absolute;
+        top: 1604px;
+        left: 446px;
+        font-family: Cormorant;
+        font-weight: Regular;
+        font-size: 24px;
+        opacity: 1;
+        text-align: left;
+    }
+
+    .v225_87 {
+        width: 847px;
+        height: 704px;
+        background: url("https://image.shutterstock.com/image-photo/hand-woman-pharmacist-pour-count-260nw-1903561762.jpg");
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+        opacity: 1;
+        position: absolute;
+        top: 492px;
+        left: 566px;
+        overflow: hidden;
+    }
+
+    .v298_26 {
+        width: 507px;
+        color: rgba(181, 216, 78, 1);
+        position: absolute;
+        top: 1296px;
+        left: 459px;
+        font-family: Halant;
+        font-weight: Medium;
+        font-size: 32px;
+        opacity: 1;
+        text-align: left;
+    }
+
+    .v298_27 {
+        width: 1051px;
+        height: 53px;
+        background: rgb(255, 255, 255);
+        opacity: 1;
+        position: absolute;
+        top: 1346px;
+        left: 446px;
+        border-top-left-radius: 30px;
+        border-top-right-radius: 30px;
+        border-bottom-left-radius: 30px;
+        border-bottom-right-radius: 30px;
+        overflow: hidden;
+    }
+</style>
